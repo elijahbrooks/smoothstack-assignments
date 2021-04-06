@@ -1,3 +1,7 @@
+/**
+ * @author elijahbrooks
+ */
+
 public class AssignmentOne {
     /**
      *
