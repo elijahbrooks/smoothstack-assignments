@@ -1,6 +1,14 @@
 import java.util.Scanner;
 
+/**
+ * @author elijahbrooks
+ */
+
 public class AssignmentTwo {
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         final int CHANCES = 5;
         int ranNumber = (int)(Math.random() * 100);
@@ -24,6 +32,12 @@ public class AssignmentTwo {
         }
     }
 
+    /**
+     *
+     * @param value
+     * @param ranNumber
+     * @return boolean
+     */
     public static boolean isNumWithinRange(int value, int ranNumber){
         if((ranNumber + 10) >= value && value >= (ranNumber - 10)){
             return true;

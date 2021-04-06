@@ -1,4 +1,8 @@
 public class AssignmentOne {
+    /**
+     *
+     * @param args
+     */
      public static void main(String[] args) {
          System.out.println("1)");
          printFirstPattern();
@@ -13,6 +17,9 @@ public class AssignmentOne {
          printFourthPattern();
     }
 
+    /**
+     *
+     */
     public static void printFirstPattern(){
         for (int rows = 1; rows < 5; rows++) {
             for (int columns = 0; columns < rows ; columns++) {
@@ -23,6 +30,9 @@ public class AssignmentOne {
         System.out.println(".........");
     }
 
+    /**
+     *
+     */
     public static void printSecondPattern(){
         System.out.println("..........");
          for (int rows = 4; rows > 0; rows--){
@@ -33,6 +43,9 @@ public class AssignmentOne {
          }
     }
 
+    /**
+     *
+     */
     public static void printThirdPattern(){
         for (int i = 1; i < 5; i++) {
             for (int j = i; j < 6; j++){
@@ -46,6 +59,9 @@ public class AssignmentOne {
         System.out.println("...........");
     }
 
+    /**
+     *
+     */
     public static void printFourthPattern() {
         System.out.println("............");
         for (int i = 6; i > 1; i--) {
