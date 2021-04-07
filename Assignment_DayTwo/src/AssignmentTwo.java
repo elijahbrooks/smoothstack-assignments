@@ -29,6 +29,13 @@ public class AssignmentTwo {
                 + ".\nLocated at sampleArray[" + row + "][" + column + ']');
     }
 
+    /**
+     *
+     * @param largestValueArray array holding the largest value information
+     * @param value the largest value found currently
+     * @param row the row of the largest value found currently
+     * @param column the column of the largest value found currently
+     */
    static void setLargestValue(int[] largestValueArray, int value, int row, int column){
         largestValueArray[0] = value;
         largestValueArray[1] = row;
