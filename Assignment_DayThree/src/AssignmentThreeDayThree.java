@@ -4,6 +4,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * @author elijahbrooks
+ */
 public class AssignmentThreeDayThree {
     public static void main(String[] args) {
         AssignmentThreeDayThree newObject = new AssignmentThreeDayThree();
@@ -15,6 +18,10 @@ public class AssignmentThreeDayThree {
         newObject.readFromFile(file);
     }
 
+    /**
+     *
+     * @param file File object made from user input
+     */
     public void readFromFile(File file){
         char[] charsToFind = {'e', 'E'};
         FileReader reader = null;

@@ -4,7 +4,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * @author elijahbrooks
+ */
 public class AssignmentTwoDayThree {
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         AssignmentTwoDayThree newObject = new AssignmentTwoDayThree();
         Scanner scan = new Scanner(System.in);
@@ -22,6 +29,12 @@ public class AssignmentTwoDayThree {
         }
     }
 
+    /**
+     *
+     * @param file File object made from user input
+     * @param text text to be appended to file
+     * @throws IOException
+     */
     public void appendToFile(File file, String text) throws IOException {
         BufferedWriter writer = null;
 
