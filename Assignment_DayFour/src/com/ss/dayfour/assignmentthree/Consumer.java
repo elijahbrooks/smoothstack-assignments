@@ -1,5 +1,8 @@
 package com.ss.dayfour.assignmentthree;
 
+/**
+ * @author elijahbrooks
+ */
 public class Consumer extends Thread {
     private QueueList queue;
 
@@ -8,6 +11,9 @@ public class Consumer extends Thread {
     }
 
     @Override
+    /**
+     * Constantly consume data every 1 second.
+     */
     public void run(){
         while(true){
             try {

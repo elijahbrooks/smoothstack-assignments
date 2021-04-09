@@ -1,16 +1,23 @@
 package com.ss.dayfour.assignmentthree;
 
-import java.util.ArrayList;
-import java.util.List;
-
+/**
+ * @author elijahbrooks
+ */
 public class Producer extends Thread{
     private QueueList queue;
 
+    /**
+     *
+     * @param queue queueList to try and produce from
+     */
     public Producer(QueueList queue) {
         this.queue = queue;
     }
 
     @Override
+    /**
+     * constantly produce data to queue
+     */
     public void run(){
         while(true){
             try {

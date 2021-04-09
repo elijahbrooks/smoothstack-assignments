@@ -1,6 +1,12 @@
 package com.ss.dayfour.assignmentthree;
-
+/**
+ * @author elijahbrooks
+ */
 public class ProduceConsumerProblem {
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         QueueList list = QueueList.getInstance();
 

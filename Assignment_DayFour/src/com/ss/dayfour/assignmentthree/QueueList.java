@@ -4,6 +4,10 @@ package com.ss.dayfour.assignmentthree;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Singleton Class
+ * @author elijahbrooks
+ */
 public class QueueList {
 
     private static final QueueList instance = new QueueList();
@@ -16,6 +20,10 @@ public class QueueList {
         return instance;
     }
 
+    /**
+     *  method to produce data to end of list
+     * @throws InterruptedException
+     */
     synchronized public void produce() throws InterruptedException {
         if(integerList.size() >= MAX_SIZE){
             System.out.println("List is full.");
@@ -26,10 +34,15 @@ public class QueueList {
         notify();
     }
 
+    /**
+     *
+     * @return data grabbed from beginning of list
+     * @throws InterruptedException
+     */
     synchronized public Double consume() throws InterruptedException {
         if(integerList.isEmpty()){
             System.out.println("List is empty.");
-            wait();
+            wait(); // Halt here until notified to continue by another thread.
         }
         Double data = integerList.get(0);
         integerList.remove(0);

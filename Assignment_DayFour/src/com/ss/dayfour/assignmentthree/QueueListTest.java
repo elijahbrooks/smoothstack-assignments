@@ -4,14 +4,23 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @author elijahbrooks
+ */
 class QueueListTest {
 
     @Test
+    /**
+     * testing constructor
+     */
     void getInstance() {
         assertEquals(QueueList.getInstance(), QueueList.getInstance());
     }
 
     @Test
+    /**
+     * testing produce
+     */
     void produce() throws InterruptedException {
         Integer size = QueueList.getInstance().getSize();
         QueueList.getInstance().produce();
@@ -19,6 +28,9 @@ class QueueListTest {
     }
 
     @Test
+    /**
+     * testing consume
+     */
     void consume() throws InterruptedException {
         Integer size = QueueList.getInstance().getSize();
         QueueList.getInstance().consume();

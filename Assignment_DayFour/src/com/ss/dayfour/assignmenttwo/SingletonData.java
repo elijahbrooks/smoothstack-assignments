@@ -1,5 +1,6 @@
 package com.ss.dayfour.assignmenttwo;
 /**
+ * Singleton Class
  * @author elijahbrooks
  */
 public class SingletonData {
@@ -15,6 +16,9 @@ public class SingletonData {
         return instance;
     }
 
+    /**
+     * increment count
+     */
     synchronized public void incrementCount(){
         try {
             Thread.sleep(1000);
@@ -25,6 +29,9 @@ public class SingletonData {
         }
     }
 
+    /**
+     * decrement count
+     */
     synchronized public void decrementCount(){
         count--;
         incrementCount();
