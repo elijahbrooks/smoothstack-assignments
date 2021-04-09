@@ -37,4 +37,8 @@ public class QueueList {
         notify();
         return data;
     }
+
+    public Integer getSize(){
+        return integerList.size();
+    }
 }
