@@ -7,6 +7,7 @@ public class AssignmentOneDayFive {
     /**
      *
      * @param args
+     *
      */
     public static void main(String[] args) {
         String stringArray[] = {"Elijah", "Brooks", "Is", "A", "Goat"};
