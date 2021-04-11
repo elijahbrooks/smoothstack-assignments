@@ -1,6 +1,13 @@
 import java.util.Arrays;
 
+/**
+ * @author elijahbrooks
+ */
 public class AssignmentOneDayFive {
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         String stringArray[] = {"Elijah", "Brooks", "Is", "A", "Goat"};
 
@@ -41,6 +48,12 @@ public class AssignmentOneDayFive {
 
     }
 
+    /**
+     *
+     * @param stringOne first string to sort
+     * @param stringTwo second string to sort
+     * @return
+     */
     static public int yourMethod(String stringOne, String stringTwo){
         return Integer.compare( // returns -1, 0, or 1
                 stringOne.contains("e") || stringOne.contains("E") ? 0 : 1, // if true return 0 else 1
