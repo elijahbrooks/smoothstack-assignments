@@ -53,7 +53,7 @@ public class DateTimeAPI {
      * Question 5
      * @param year
      */
-    void getDaysOfMonths(int year){
+    Integer[] getDaysOfMonths(int year){
         Integer[] daysOfMonths = Arrays.stream(Month.values())
                 .map(month -> month.length(Year.isLeap(year)))
                 .collect(Collectors.toList())
@@ -61,7 +61,10 @@ public class DateTimeAPI {
 
         for (int i = 0; i < daysOfMonths.length; i++)
             System.out.println(daysOfMonths[i] + " Days in " + Month.of(i + 1));
+
+        return daysOfMonths;
     }
+
 
     /**
      * Question 6
