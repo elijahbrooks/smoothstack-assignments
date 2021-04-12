@@ -1,7 +1,14 @@
 import java.util.function.Consumer;
 
-
+/**
+ * @author elijahbrooks
+ */
 public class Lambda {
+
+    /**
+     * prints out if integer is even or odd
+     * @return consumer
+     */
     public static Consumer<Integer> isOdd(){
          return number -> {
             if(number % 2 != 0)
@@ -11,6 +18,10 @@ public class Lambda {
         };
     }
 
+    /**
+     *  prints if number is prime or composite
+     * @return consumer
+     */
     public static Consumer<Integer> isPrime(){
         return number -> {
             boolean flag = true;
@@ -26,6 +37,10 @@ public class Lambda {
         };
     }
 
+    /**
+     * prints if string is a palindrome or not.
+     * @return consumer
+     */
     public static Consumer<String> isPalindrome(){
         return string -> {
             int i = 0;

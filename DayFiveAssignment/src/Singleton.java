@@ -1,13 +1,24 @@
 import java.sql.*;
 
+/**
+ * @author elijahbrooks
+ */
 public class Singleton {
     private static Connection conn = null;
     private static final Singleton instance = new Singleton();
-
+    /**
+     *
+     * @return single Singleton instance
+     */
     public static Singleton getInstance(){
         return instance;
     }
 
+    /**
+     *
+     * @param input
+     * @throws SQLException
+     */
     public static void databaseQuery(Integer input) throws SQLException {
         conn = DriverManager.getConnection("url of database");
         Statement st = conn.createStatement();

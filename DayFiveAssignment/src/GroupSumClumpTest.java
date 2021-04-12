@@ -1,7 +1,13 @@
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @author elijahbrooks
+ */
 class GroupSumClumpTest {
 
+    /**
+     * method to test groupSumClump of GroupSumClump class
+     */
     @org.junit.jupiter.api.Test
     void groupSumClump() {
         GroupSumClump gsc = new GroupSumClump();
